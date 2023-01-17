@@ -4,22 +4,24 @@ class APIHandler {
   }
 
   getFullList () {
-
+    return this.BASE_URL.get(`/characters`)
   }
 
-  getOneRegister () {
-
+  getOneRegister (characterId) {
+    return this.BASE_URL.get(`/characters/${characterId}`)
   }
 
-  createOneRegister () {
-
+  createOneRegister (characterInfo) {
+    return this.BASE_URL.post(`/characters`, characterInfo)
   }
 
-  updateOneRegister () {
-
+  updateOneRegister (characterId, characterInfo) {
+    return this.BASE_URL.put(`/characters/${characterId}`, characterInfo)
   }
 
-  deleteOneRegister () {
-
+  deleteOneRegister (characterId) {
+    return this.BASE_URL.delete(`/characters/${characterId}`)
   }
 }
+
+module.exports = APIHandler

@@ -20,6 +20,12 @@
       "occupation": "Lives under the sea",
       "weapon": "Crabby Patty",
       "cartoon": true
+    },
+    {
+      "name": "Walter White",
+      "occupation": "Dealer",
+      "weapon": "meth",
+      "id": 4
     }
   ]
 }
